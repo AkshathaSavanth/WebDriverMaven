@@ -26,6 +26,7 @@ public class LoginTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.id("email")).sendKeys("akshata@gmail.com");
 		driver.findElement(By.name("password")).sendKeys("Aksh");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
